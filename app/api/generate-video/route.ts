@@ -190,10 +190,7 @@ async function runGenerateVideo(
     );
   }
 
-  const prompt = buildVideoPrompt({
-    business_name: lead.business_name,
-    category: lead.category,
-  });
+  const prompt = buildVideoPrompt();
 
   const promptSnapshot = buildVideoJobPromptSnapshot(prompt, {
     ltx_model_id: model,
